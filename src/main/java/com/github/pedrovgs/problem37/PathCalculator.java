@@ -56,7 +56,7 @@ public class PathCalculator {
     List<String> finalPath = new LinkedList<String>();
     for (String[] path : paths) {
       for (String dir : path) {
-        if (dir.equals("..")) {
+        if ("..".equals(dir)) {
           if (!finalPath.isEmpty()) {
             finalPath.remove(finalPath.size() - 1);
           }
